@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  Jenkinx:
+    image: docker.io/bitnami/nginx:1.21
+    ports:
+      - '9100:8080'
+    volumes:
+      - ./index.html:/app/index.html   
+
